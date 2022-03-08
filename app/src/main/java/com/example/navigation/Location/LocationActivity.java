@@ -78,6 +78,7 @@ public class LocationActivity extends AppCompatActivity {
                     {
 
                         mGoogleMap=googleMap;
+                        mGoogleMap.getMapType();
 
                        // LatLng latLng=new LatLng(location.getLatitude(),location.getLongitude());
                        // latitude=location.getLatitude();
