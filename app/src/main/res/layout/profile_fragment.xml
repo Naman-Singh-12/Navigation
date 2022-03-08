@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.Profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        //---------------------------------Logo
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/large"
+            android:layout_gravity="center"
+            />
+        //------------------------------Profile
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="170dp">
+
+
+           <LinearLayout
+               android:id="@+id/ll_profilercontainer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="5dp"
+               android:background="@drawable/add_money_bg"
+               android:elevation="5dp"
+               android:orientation="vertical"
+               android:paddingVertical="10dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_marginStart="20dp"
+                       android:padding="10dp"
+                       android:src="@drawable/profile_icon" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="vertical"
+                       android:padding="10dp">
+
+                       <TextView
+                           android:id="@+id/tv_userid"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="User ID"
+                           android:textColor="#ffffff" />
+
+                       <TextView
+                           android:id="@+id/tv_name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Name"
+                           android:textColor="#ffffff" />
+
+                       <TextView
+                           android:id="@+id/tv_department"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Department"
+                           android:textColor="#ffffff" />
+
+                       <TextView
+                           android:id="@+id/tv_designation"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Designation"
+                           android:textColor="#ffffff" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/showprofilebackground"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center_horizontal"
+                   android:padding="@dimen/d_10dp"
+                   >
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingRight="5dp"
+                       android:src="@drawable/ic_person" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingLeft="5dp"
+                       android:text="Show Profile"
+                       android:textColor="#673AB7"
+                       android:textStyle="bold" />
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rv_menuitem"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"/>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rv_showprofile"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"/>
+
+       </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

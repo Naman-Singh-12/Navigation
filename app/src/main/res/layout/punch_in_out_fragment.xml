@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/punch_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:tabSelectedTextColor="@color/mainColorBlue"
+        app:tabIndicatorColor="@color/mainColorBlue"
+        android:layout_alignParentRight="true">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tb_punchmarke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punch Mark" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tb_reportpunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punch Report" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/punch_viewpager"/>
+
+    <FrameLayout
+        android:id="@+id/punch_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/punch_tabLayout" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.navigation.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/nav_punchinout"
+        android:name="com.example.navigation.ui.PunchInOut.PunchInOutFragment"
+        android:label="Punch In Out"
+        tools:layout="@layout/punch_in_out_fragment" />
+
+    <fragment
+        android:id="@+id/nav_myattendancecalender"
+        android:name="com.example.navigation.ui.MyAttendanceCalendar.MyAttendanceCalendarFragment"
+        android:label="My Attendance Calendar"
+        tools:layout="@layout/my_attendance_calendar_fragment" />
+
+    <fragment
+        android:id="@+id/nav_markattendance"
+        android:name="com.example.navigation.ui.MarkeAttendance.MarkeAttendanceFragment"
+        android:label="Mark Attendance"
+        tools:layout="@layout/marke_attendance_fragment"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_myholiday"
+        android:name="com.example.navigation.ui.MyHoliday.MyHolidayFragment"
+        android:label="My Holiday"
+        tools:layout="@layout/my_holiday_fragment"/>
+    <fragment
+        android:id="@+id/nav_leaverequest"
+        android:name="com.example.navigation.ui.LeaveRequest.LeaveRequestFragment"
+        android:label="Leave Request"
+        tools:layout="@layout/leave_request_fragment"/>
+    <fragment
+        android:id="@+id/nav_odrequest"
+        android:name="com.example.navigation.ui.OdRequest.ODRequestFragment"
+        android:label="OD Request"
+        tools:layout="@layout/o_d_request_fragment"/>
+    <fragment
+        android:id="@+id/nav_leaveencashmentrequest"
+        android:name="com.example.navigation.ui.LeaveEncashmentRequest.LeaveEncashmentRequestFragment"
+        android:label="Leave Encashment Request"
+        tools:layout="@layout/leave_encashment_request_fragment"/>
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.navigation.ui.Dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard_fragment"/>
+    <fragment
+        android:id="@+id/nav_shortleaverequest"
+        android:name="com.example.navigation.ui.ShortLeaveRequest.ShortLeaveRequestFragment"
+        android:label="Short Leave Request"
+        tools:layout="@layout/short_leave_request_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_faceattendance"
+        android:name="com.example.navigation.ui.FaceAttendance.FaceAttendanceragment"
+        android:label="Face Attendance"
+        tools:layout="@layout/face_attendanceragment_fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.navigation.ui.Map.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/map_fragment"
+        />
+
+</navigation>

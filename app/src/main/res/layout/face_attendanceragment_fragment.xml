@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.FaceAttendance.FaceAttendanceragment"
+        android:background="@drawable/background"
+        android:padding="@dimen/d_10dp"
+        android:paddingTop="@dimen/d_20dp"
+
+    >
+
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginVertical="@dimen/d_5dp"
+            android:background="@drawable/background"
+            android:elevation="@dimen/d_40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:text="@string/current_date"
+                />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/d_5dp"
+                android:paddingVertical="@dimen/d_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/textviewbackground"
+                android:hint="@string/date"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/d_5dp"
+            android:layout_below="@+id/ll_date"
+            android:elevation="@dimen/d_20dp"
+            android:background="@drawable/background"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/current_time"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tv_date"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/time"
+                android:paddingLeft="@dimen/d_5dp"
+                android:paddingVertical="@dimen/d_5dp"
+
+                android:background="@drawable/textviewbackground"
+                />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_faceattendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:onClick="openCamera"
+        android:text="@string/take_face" />
+
+    <TextView
+        android:id="@+id/tv_faceattendancelocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_faceattendance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:hint="@string/location" />
+
+    <TextView
+        android:id="@+id/tv_funfact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_faceattendancelocation"
+        android:layout_marginTop="@dimen/d_20dp"
+        android:background="@drawable/funfactbackground"
+        android:gravity="center"
+        android:textSize="@dimen/d_40sp"
+        android:hint="@string/fun_fact"/>
+    </RelativeLayout>
+

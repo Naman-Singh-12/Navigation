@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_punchinout"
+            android:title="Punch In Out" />
+        <item
+            android:id="@+id/nav_myattendancecalender"
+            android:title="My Attendance Calendar" />
+        <item
+            android:id="@+id/nav_markattendance"
+            android:title="Mark Attendance"/>
+        <item
+            android:id="@+id/nav_myholiday"
+            android:title="My Holiday"/>
+        <item
+            android:id="@+id/nav_leaverequest"
+            android:title="Leave Request"/>
+        <item
+            android:id="@+id/nav_odrequest"
+            android:title="OD Request"/>
+        <item
+            android:id="@+id/nav_leaveencashmentrequest"
+            android:title="Leave Encashment Request"/>
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard"/>
+        <item
+            android:id="@+id/nav_shortleaverequest"
+            android:title="Short Leave Request"/>
+        <item
+            android:id="@+id/nav_faceattendance"
+            android:title="Face Attendance"/>
+        <item
+            android:id="@+id/nav_map"
+            android:title="Map"/>
+    </group>
+</menu>
